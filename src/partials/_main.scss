@@ -1,0 +1,11 @@
+.container{
+    height: 200px;
+
+    .info{
+        background-color: $nav_text_color;
+        height: 100px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+    }
+}
