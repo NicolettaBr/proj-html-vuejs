@@ -6,6 +6,7 @@ header{
     background-repeat: no-repeat;
     background-position-y: 60%;
     position: relative;
+    padding: 50px 0;
 }
 
 .icons{
@@ -17,15 +18,52 @@ header{
     height: 20%;
 
     .plus{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background-color: $button_color;
         color: $nav_text_color;
         border-radius: 50%;
         text-align: center;
-        line-height: 50px;
+        line-height: 40px;
         font-size: 20px;
         font-weight: bold;
         
+    }
+}
+
+nav{
+    display: flex;
+    
+    .logo{
+        width: 20%;
+        align-self: center;
+    }
+
+    .menu{
+        width: 80%;
+        list-style-type: none;
+        text-align: right;
+        align-self: center;
+
+        li{
+            display: inline-block;
+            margin-left: 30px;
+            color: $nav_text_color;
+
+            .chevron{
+                margin-left: 5px;
+                visibility: hidden;
+                color: $hover_color;
+                
+            }
+
+            &:hover .chevron{
+                visibility: visible;
+            }
+
+            &:hover{
+                color: $hover_color;
+            }
+        }
     }
 }

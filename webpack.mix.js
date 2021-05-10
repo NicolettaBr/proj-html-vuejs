@@ -5,3 +5,4 @@ mix.js('src/app.js', 'dist')
    .options({
     processCssUrls: false
 }); 
+

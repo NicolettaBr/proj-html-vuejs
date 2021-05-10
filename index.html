@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proj-html-vuejs</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="dist/app.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
@@ -18,10 +22,26 @@
 
                 <!--nav-section-->
                 <nav>
+
                     <!--logo-->
                     <div class="logo">
-                        {{test}}
+                        <img :src="logo_nav.logo" alt="logo_nav.logo">
                     </div>
+                    <!--end logo-->
+
+                    <!--menu-->
+                   <ul class="menu">
+                       <li v-for="options in menu_nav">
+                           {{options}}
+                           <i class="fas fa-chevron-down chevron"></i>
+                       </li>
+
+                       <li>
+                            <i class="fas fa-shopping-cart"></i>
+                       </li>
+                   </ul>
+                   <!--end menu-->
+
                 </nav>
                 <!--end nav-section-->
 
@@ -37,9 +57,8 @@
         <!--END HEADER-->
        
 
-
     </div>
     
-    <script type="text" src="dist/app.js"></script>
+    <script type="text/javascript" src="dist/app.js"></script>
 </body>
 </html>

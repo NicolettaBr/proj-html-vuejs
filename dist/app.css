@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
 .container {
   width: 70%;
-  height: 100px;
   margin: auto;
-  /*test*/
-  color: white;
-  background-color: lightcoral;
 }
 
 header {
@@ -21,6 +25,7 @@ header {
   background-repeat: no-repeat;
   background-position-y: 60%;
   position: relative;
+  padding: 50px 0;
 }
 
 .icons {
@@ -32,13 +37,43 @@ header {
   height: 20%;
 }
 .icons .plus {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #cc1a26;
   color: #ffffff;
   border-radius: 50%;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   font-size: 20px;
   font-weight: bold;
+}
+
+nav {
+  display: flex;
+}
+nav .logo {
+  width: 20%;
+  align-self: center;
+}
+nav .menu {
+  width: 80%;
+  list-style-type: none;
+  text-align: right;
+  align-self: center;
+}
+nav .menu li {
+  display: inline-block;
+  margin-left: 30px;
+  color: #ffffff;
+}
+nav .menu li .chevron {
+  margin-left: 5px;
+  visibility: hidden;
+  color: #fcd66c;
+}
+nav .menu li:hover .chevron {
+  visibility: visible;
+}
+nav .menu li:hover {
+  color: #fcd66c;
 }
