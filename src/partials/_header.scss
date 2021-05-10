@@ -7,63 +7,81 @@ header{
     background-position-y: 60%;
     position: relative;
     padding: 50px 0;
-}
 
-.icons{
-    position: absolute;
-    top: 10px;
-    right: 0;
-    background-color: blue;
-    width: 5%;
-    height: 20%;
-
-    .plus{
-        width: 40px;
-        height: 40px;
-        background-color: $button_color;
-        color: $nav_text_color;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 40px;
-        font-size: 20px;
-        font-weight: bold;
+    nav{
+        display: flex;
         
-    }
-}
-
-nav{
-    display: flex;
+        .logo{
+            width: 20%;
+            align-self: center;
+        }
     
-    .logo{
-        width: 20%;
-        align-self: center;
-    }
-
-    .menu{
-        width: 80%;
-        list-style-type: none;
-        text-align: right;
-        align-self: center;
-
-        li{
-            display: inline-block;
-            margin-left: 30px;
-            color: $nav_text_color;
-
-            .chevron{
-                margin-left: 5px;
-                visibility: hidden;
-                color: $hover_color;
-                
-            }
-
-            &:hover .chevron{
-                visibility: visible;
-            }
-
-            &:hover{
-                color: $hover_color;
+        .menu{
+            width: 80%;
+            list-style-type: none;
+            text-align: right;
+            align-self: center;
+    
+            li{
+                display: inline-block;
+                margin-left: 30px;
+                color: $nav_text_color;
+                cursor: pointer;
+    
+                .chevron{
+                    margin-left: 5px;
+                    visibility: hidden;
+                    color: $hover_color;
+                }
+    
+                &:hover .chevron{
+                    visibility: visible;
+                }
+    
+                &:hover{
+                    color: $hover_color;
+                }
             }
         }
     }
+
+    .slogan-container{
+        color: $nav_text_color;
+        margin-top: 120px;
+        h1{
+            font-size: 60px;
+
+            & span{
+                color: $hover_color;
+            }
+        }
+
+        .btn{
+            @include button-style;
+        }
+    }
+    
+    .icons{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 5%;
+        height: 20%;
+    
+        .plus{
+            width: 40px;
+            height: 40px;
+            background-color: $button_color;
+            color: $nav_text_color;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+    }
 }
+
+
+

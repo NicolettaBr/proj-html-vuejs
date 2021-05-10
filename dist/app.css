@@ -27,16 +27,66 @@ header {
   position: relative;
   padding: 50px 0;
 }
-
-.icons {
+header nav {
+  display: flex;
+}
+header nav .logo {
+  width: 20%;
+  align-self: center;
+}
+header nav .menu {
+  width: 80%;
+  list-style-type: none;
+  text-align: right;
+  align-self: center;
+}
+header nav .menu li {
+  display: inline-block;
+  margin-left: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+header nav .menu li .chevron {
+  margin-left: 5px;
+  visibility: hidden;
+  color: #f7f321;
+}
+header nav .menu li:hover .chevron {
+  visibility: visible;
+}
+header nav .menu li:hover {
+  color: #f7f321;
+}
+header .slogan-container {
+  color: #ffffff;
+  margin-top: 120px;
+}
+header .slogan-container h1 {
+  font-size: 60px;
+}
+header .slogan-container h1 span {
+  color: #f7f321;
+}
+header .slogan-container .btn {
+  color: #ffffff;
+  background-color: #cc1a26;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  border: 1px solid #cc1a26;
+  border-radius: 50px;
+  margin: 15px 0;
+}
+header .slogan-container .btn i {
+  margin-left: 5px;
+}
+header .icons {
   position: absolute;
   top: 10px;
   right: 0;
-  background-color: blue;
   width: 5%;
   height: 20%;
 }
-.icons .plus {
+header .icons .plus {
   width: 40px;
   height: 40px;
   background-color: #cc1a26;
@@ -46,34 +96,4 @@ header {
   line-height: 40px;
   font-size: 20px;
   font-weight: bold;
-}
-
-nav {
-  display: flex;
-}
-nav .logo {
-  width: 20%;
-  align-self: center;
-}
-nav .menu {
-  width: 80%;
-  list-style-type: none;
-  text-align: right;
-  align-self: center;
-}
-nav .menu li {
-  display: inline-block;
-  margin-left: 30px;
-  color: #ffffff;
-}
-nav .menu li .chevron {
-  margin-left: 5px;
-  visibility: hidden;
-  color: #fcd66c;
-}
-nav .menu li:hover .chevron {
-  visibility: visible;
-}
-nav .menu li:hover {
-  color: #fcd66c;
 }
