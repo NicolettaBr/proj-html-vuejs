@@ -100,10 +100,10 @@ header .icons .plus {
   font-weight: bold;
 }
 
-.container {
-  height: 200px;
+main .container:first-child {
+  height: 60px;
 }
-.container .info {
+main .container:first-child .info {
   background-color: #ffffff;
   height: 80px;
   position: absolute;
@@ -111,23 +111,60 @@ header .icons .plus {
   left: 0;
   width: 100%;
 }
-.container .info .menu-main {
+main .container:first-child .info .menu-info {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   height: 100%;
   font-size: 15px;
 }
-.container .info .menu-main li {
+main .container:first-child .info .menu-info li {
   width: calc 25%;
   align-self: center;
 }
-.container .info .menu-main li {
+main .container:first-child .info .menu-info li {
   color: #555454;
   text-transform: uppercase;
   font-weight: bold;
 }
-.container .info .menu-main li i {
+main .container:first-child .info .menu-info li i {
   margin-right: 5px;
   color: #020201;
+}
+main .container {
+  text-align: center;
+}
+main .container .most-pop-dishes h2 {
+  padding: 40px 0;
+}
+main .container .most-pop-dishes .photos-dishes {
+  display: flex;
+  justify-content: center;
+}
+main .container .most-pop-dishes .photos-dishes .photo {
+  width: calc 33.3333333333%;
+  padding: 10px;
+}
+main .container .most-pop-dishes .photos-dishes .photo .medium-text {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: lighten #020201, 30%;
+}
+main .container .most-pop-dishes .photos-dishes .photo .price {
+  font-size: 15px;
+  color: #bf1e23;
+}
+main .container .most-pop-dishes .btn {
+  color: #ffffff;
+  background-color: #cc1a26;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  border: 1px solid #cc1a26;
+  border-radius: 50px;
+  margin: 15px 0;
+  margin-bottom: 40px;
+}
+main .container .most-pop-dishes .btn i {
+  margin-left: 5px;
 }

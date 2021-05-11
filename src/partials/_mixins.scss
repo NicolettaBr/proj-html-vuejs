@@ -12,7 +12,7 @@
     }
 }
 
-@mixin menu-main{
+@mixin menu-info{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -22,4 +22,9 @@
         align-self: center;
         
     }
+}
+
+@mixin flex-photo{
+    display: flex;
+    justify-content: center;
 }

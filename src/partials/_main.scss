@@ -1,28 +1,72 @@
-.container{
-    height: 200px;
-
-    .info{
-        background-color: $nav_text_color;
-        height: 80px;
-        position: absolute;
-        top: -20px;
-        left: 0;
-        width: 100%;
-
-        .menu-main{
-            @include menu-main;
-            height: 100%;
-            font-size: $small_text;
+main{
+    .container:first-child{
+       height: 60px;
+       
+        .info{
+            background-color: $nav_text_color;
+            height: 80px;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 100%;
             
-            li{
-                color: $menu_color;
-                text-transform: uppercase;
-                font-weight: bold;
-                i{
-                    margin-right: 5px;
-                    color: $title_category_color;
+            .menu-info{
+                @include menu-info;
+                height: 100%;
+                font-size: $small_text;
+                
+                li{
+                    color: $menu_color;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    i{
+                        margin-right: 5px;
+                        color: $title_category_color;
+                    }
                 }
             }
         }
+    }
+
+    .container{
+        text-align: center;
+
+        .most-pop-dishes{
+
+            h2{
+                padding: $padding_titles;
+            }
+    
+            .photos-dishes{
+                @include flex-photo;
+                .photo{
+                    width: calc ( 100% / 3 );
+                    padding: 10px;
+    
+                    .medium-text{
+                        font-size: $medium_text_size;
+                        margin: 10px 0;
+                        font-weight: bold;
+                        color: $product_name_color;
+                    }
+    
+                    .price{
+                        font-size: $small_text;
+                        color: $price_color;
+                    }
+                }
+            }
+
+            .btn{
+                @include button-style; 
+                margin-bottom: 40px;  
+            }
+    
+            
+
+        }
+        
+        
+        
     }
 }
