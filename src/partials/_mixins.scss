@@ -6,6 +6,12 @@
     border: 1px solid $button_color;
     border-radius: 50px;
     margin: 15px 0;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $hover_color_button;
+        border: 1px solid $hover_color_button;
+    }
 
     i{
         margin-left: 5px;

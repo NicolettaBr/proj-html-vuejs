@@ -18,6 +18,17 @@ img {
   position: relative;
 }
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+}
+
 header {
   background-image: url("../img/home-background-hero-scaled.jpg");
   width: 100%;
@@ -77,6 +88,11 @@ header .slogan-container .btn {
   border: 1px solid #cc1a26;
   border-radius: 50px;
   margin: 15px 0;
+  cursor: pointer;
+}
+header .slogan-container .btn:hover {
+  background-color: #911018;
+  border: 1px solid #911018;
 }
 header .slogan-container .btn i {
   margin-left: 5px;
@@ -163,7 +179,12 @@ main .container .most-pop-dishes .btn {
   border: 1px solid #cc1a26;
   border-radius: 50px;
   margin: 15px 0;
+  cursor: pointer;
   margin-bottom: 40px;
+}
+main .container .most-pop-dishes .btn:hover {
+  background-color: #911018;
+  border: 1px solid #911018;
 }
 main .container .most-pop-dishes .btn i {
   margin-left: 5px;
@@ -229,7 +250,13 @@ main .new-products .menu-title .btn {
   border: 1px solid #cc1a26;
   border-radius: 50px;
   margin: 15px 0;
+  cursor: pointer;
   align-self: center;
+}
+main .menu-categories .menu-title .btn:hover,
+main .new-products .menu-title .btn:hover {
+  background-color: #911018;
+  border: 1px solid #911018;
 }
 main .menu-categories .menu-title .btn i,
 main .new-products .menu-title .btn i {
@@ -288,4 +315,16 @@ main .menu-categories .photo-news .photo-2,
 main .new-products .photo-news .photo-1,
 main .new-products .photo-news .photo-2 {
   width: 450px;
+}
+main .menu-categories .photo-news .photo-1 .img-container,
+main .menu-categories .photo-news .photo-2 .img-container,
+main .new-products .photo-news .photo-1 .img-container,
+main .new-products .photo-news .photo-2 .img-container {
+  position: relative;
+}
+main .menu-categories .photo-news .photo-1 .img-container:hover .overlay,
+main .menu-categories .photo-news .photo-2 .img-container:hover .overlay,
+main .new-products .photo-news .photo-1 .img-container:hover .overlay,
+main .new-products .photo-news .photo-2 .img-container:hover .overlay {
+  display: block;
 }

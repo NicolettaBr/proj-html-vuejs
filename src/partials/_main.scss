@@ -173,7 +173,18 @@ main{
             .photo-1,
             .photo-2{
                 width: 450px;
+
+                .img-container{
+                    position: relative;
+
+                    &:hover .overlay{
+                        display: block;
+                    }
+                }
+               
+                
             }
+         
         }
     }
 }
