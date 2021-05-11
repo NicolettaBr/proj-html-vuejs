@@ -168,3 +168,19 @@ main .container .most-pop-dishes .btn {
 main .container .most-pop-dishes .btn i {
   margin-left: 5px;
 }
+main .divider {
+  height: 400px;
+  position: relative;
+}
+main .divider img {
+  height: 100%;
+}
+main .divider .cover {
+  position: absolute;
+  bottom: 156px;
+  right: 0;
+  background-image: url("../img/svg-0.svg");
+  height: 70%;
+  width: 100%;
+  background-size: cover;
+}

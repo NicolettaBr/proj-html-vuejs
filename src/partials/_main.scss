@@ -60,13 +60,29 @@ main{
             .btn{
                 @include button-style; 
                 margin-bottom: 40px;  
-            }
-    
-            
-
+            }   
         }
-        
-        
-        
+    }
+
+    .divider{
+        height: 400px;
+        position: relative;
+
+        img{
+            height: 100%;
+            
+        }
+
+        .cover{
+            position: absolute;
+            bottom: 156px;
+            right: 0;
+            background-image: url('../img/svg-0.svg');
+            height: 70%;
+            width: 100%;
+            background-size: cover;
+            
+        }
+
     }
 }
