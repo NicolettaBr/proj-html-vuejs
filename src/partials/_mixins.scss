@@ -10,5 +10,16 @@
     i{
         margin-left: 5px;
     }
+}
 
+@mixin menu-main{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+    li{
+        width: calc ( 100% / 4 );
+        align-self: center;
+        
+    }
 }

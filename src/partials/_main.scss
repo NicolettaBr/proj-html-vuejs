@@ -3,9 +3,26 @@
 
     .info{
         background-color: $nav_text_color;
-        height: 100px;
+        height: 80px;
         position: absolute;
         top: -20px;
         left: 0;
+        width: 100%;
+
+        .menu-main{
+            @include menu-main;
+            height: 100%;
+            font-size: $small_text;
+            
+            li{
+                color: $menu_color;
+                text-transform: uppercase;
+                font-weight: bold;
+                i{
+                    margin-right: 5px;
+                    color: $title_category_color;
+                }
+            }
+        }
     }
 }

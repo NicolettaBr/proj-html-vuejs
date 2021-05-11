@@ -40,6 +40,7 @@ header nav .menu {
   list-style-type: none;
   text-align: right;
   align-self: center;
+  font-size: 15px;
 }
 header nav .menu li {
   display: inline-block;
@@ -104,8 +105,29 @@ header .icons .plus {
 }
 .container .info {
   background-color: #ffffff;
-  height: 100px;
+  height: 80px;
   position: absolute;
   top: -20px;
   left: 0;
+  width: 100%;
+}
+.container .info .menu-main {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  font-size: 15px;
+}
+.container .info .menu-main li {
+  width: calc 25%;
+  align-self: center;
+}
+.container .info .menu-main li {
+  color: #555454;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container .info .menu-main li i {
+  margin-right: 5px;
+  color: #020201;
 }
