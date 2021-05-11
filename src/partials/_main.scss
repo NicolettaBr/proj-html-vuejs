@@ -109,7 +109,8 @@ main{
         }
     }
 
-    .menu-categories{
+    .menu-categories,
+    .new-products{
         margin: 70px 0;
         
         .menu-title{
@@ -151,11 +152,28 @@ main{
                     height: 80%;
                     width: 200px;
                 }
+            }
+        }
 
+        .photo-news{
+            @include flex;
+
+            .medium-text{
+                font-size: $medium_text_size;
+                margin: 10px 0;
+                font-weight: bold;
+                color: $product_name_color;
             }
 
+            .paragraph-text{
+                font-size: $small_text;
+                color: $menu_color;
+            }
+
+            .photo-1,
+            .photo-2{
+                width: 450px;
+            }
         }
     }
-
-
 }

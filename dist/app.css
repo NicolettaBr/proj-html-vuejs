@@ -205,19 +205,23 @@ main .divider .container a img {
   width: 120px;
   height: 40px;
 }
-main .menu-categories {
+main .menu-categories,
+main .new-products {
   margin: 70px 0;
 }
-main .menu-categories .menu-title {
+main .menu-categories .menu-title,
+main .new-products .menu-title {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-main .menu-categories .menu-title h2 {
+main .menu-categories .menu-title h2,
+main .new-products .menu-title h2 {
   align-self: center;
   padding: 40px 0;
 }
-main .menu-categories .menu-title .btn {
+main .menu-categories .menu-title .btn,
+main .new-products .menu-title .btn {
   color: #ffffff;
   background-color: #cc1a26;
   padding: 7px 13px;
@@ -227,23 +231,28 @@ main .menu-categories .menu-title .btn {
   margin: 15px 0;
   align-self: center;
 }
-main .menu-categories .menu-title .btn i {
+main .menu-categories .menu-title .btn i,
+main .new-products .menu-title .btn i {
   margin-left: 5px;
 }
-main .menu-categories .photos-menu {
+main .menu-categories .photos-menu,
+main .new-products .photos-menu {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-main .menu-categories .photos-menu .single-photo {
+main .menu-categories .photos-menu .single-photo,
+main .new-products .photos-menu .single-photo {
   width: 220px;
   height: 150px;
   margin-bottom: 20px;
 }
-main .menu-categories .photos-menu .single-photo img {
+main .menu-categories .photos-menu .single-photo img,
+main .new-products .photos-menu .single-photo img {
   height: 100%;
 }
-main .menu-categories .photos-menu .icon {
+main .menu-categories .photos-menu .icon,
+main .new-products .photos-menu .icon {
   width: 220px;
   height: 150px;
   margin-bottom: 20px;
@@ -251,7 +260,32 @@ main .menu-categories .photos-menu .icon {
   font-size: 15px;
   font-weight: bold;
 }
-main .menu-categories .photos-menu .icon img {
+main .menu-categories .photos-menu .icon img,
+main .new-products .photos-menu .icon img {
   height: 80%;
   width: 200px;
+}
+main .menu-categories .photo-news,
+main .new-products .photo-news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .menu-categories .photo-news .medium-text,
+main .new-products .photo-news .medium-text {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: lighten #020201, 30%;
+}
+main .menu-categories .photo-news .paragraph-text,
+main .new-products .photo-news .paragraph-text {
+  font-size: 15px;
+  color: #555454;
+}
+main .menu-categories .photo-news .photo-1,
+main .menu-categories .photo-news .photo-2,
+main .new-products .photo-news .photo-1,
+main .new-products .photo-news .photo-2 {
+  width: 450px;
 }
