@@ -87,9 +87,7 @@ main{
 
     .menu-categories{
         margin: 70px 0;
-        background-color: lightcoral;
         
-
         .menu-title{
             @include flex;
 
@@ -107,11 +105,29 @@ main{
         .photos-menu{
             @include flex;
             
-
             .single-photo{
-                width: 200px;
+                width: 220px;
                 height: 150px;
-                background-color: red;
+                margin-bottom: 20px;
+
+                img{
+                    height: 100%;
+                }
+            }
+
+            .icon{
+                width: 220px;
+                height: 150px;
+                margin-bottom: 20px;
+                background-color: $nav_text_color;
+                font-size: $small_text;
+                font-weight: bold;
+
+                img{
+                    height: 80%;
+                    width: 200px;
+                }
+
             }
 
         }

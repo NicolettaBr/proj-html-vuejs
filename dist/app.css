@@ -186,7 +186,6 @@ main .divider .cover {
 }
 main .menu-categories {
   margin: 70px 0;
-  background-color: lightcoral;
 }
 main .menu-categories .menu-title {
   display: flex;
@@ -216,7 +215,22 @@ main .menu-categories .photos-menu {
   flex-wrap: wrap;
 }
 main .menu-categories .photos-menu .single-photo {
-  width: 200px;
+  width: 220px;
   height: 150px;
-  background-color: red;
+  margin-bottom: 20px;
+}
+main .menu-categories .photos-menu .single-photo img {
+  height: 100%;
+}
+main .menu-categories .photos-menu .icon {
+  width: 220px;
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+}
+main .menu-categories .photos-menu .icon img {
+  height: 80%;
+  width: 200px;
 }
