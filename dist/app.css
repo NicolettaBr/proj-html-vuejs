@@ -184,3 +184,39 @@ main .divider .cover {
   width: 100%;
   background-size: cover;
 }
+main .menu-categories {
+  margin: 70px 0;
+  background-color: lightcoral;
+}
+main .menu-categories .menu-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .menu-categories .menu-title h2 {
+  align-self: center;
+  padding: 40px 0;
+}
+main .menu-categories .menu-title .btn {
+  color: #ffffff;
+  background-color: #cc1a26;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  border: 1px solid #cc1a26;
+  border-radius: 50px;
+  margin: 15px 0;
+  align-self: center;
+}
+main .menu-categories .menu-title .btn i {
+  margin-left: 5px;
+}
+main .menu-categories .photos-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .menu-categories .photos-menu .single-photo {
+  width: 200px;
+  height: 150px;
+  background-color: red;
+}

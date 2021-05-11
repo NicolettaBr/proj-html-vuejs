@@ -83,6 +83,37 @@ main{
             background-size: cover;
             
         }
+    }
 
+    .menu-categories{
+        margin: 70px 0;
+        background-color: lightcoral;
+        
+
+        .menu-title{
+            @include flex;
+
+            h2{
+                align-self: center;
+                padding: $padding_titles;
+            }
+    
+            .btn{
+                @include button-style;
+                align-self: center;
+            }
+        }
+
+        .photos-menu{
+            @include flex;
+            
+
+            .single-photo{
+                width: 200px;
+                height: 150px;
+                background-color: red;
+            }
+
+        }
     }
 }
