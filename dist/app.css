@@ -28,6 +28,27 @@ img {
   z-index: 2;
   display: none;
 }
+.overlay .view {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay div {
+  font-size: 10px;
+  width: 100%;
+  margin: auto;
+  text-transform: uppercase;
+}
 
 header {
   background-image: url("../img/home-background-hero-scaled.jpg");
@@ -170,6 +191,13 @@ main .container .most-pop-dishes .photos-dishes .photo .medium-text {
 main .container .most-pop-dishes .photos-dishes .photo .price {
   font-size: 15px;
   color: #bf1e23;
+}
+main .container .most-pop-dishes .photos-dishes .photo .img-container {
+  position: relative;
+  cursor: pointer;
+}
+main .container .most-pop-dishes .photos-dishes .photo .img-container:hover .overlay {
+  display: block;
 }
 main .container .most-pop-dishes .btn {
   color: #ffffff;
@@ -321,6 +349,7 @@ main .menu-categories .photo-news .photo-2 .img-container,
 main .new-products .photo-news .photo-1 .img-container,
 main .new-products .photo-news .photo-2 .img-container {
   position: relative;
+  cursor: pointer;
 }
 main .menu-categories .photo-news .photo-1 .img-container:hover .overlay,
 main .menu-categories .photo-news .photo-2 .img-container:hover .overlay,

@@ -54,6 +54,15 @@ main{
                         font-size: $small_text;
                         color: $price_color;
                     }
+
+                    .img-container{
+                        position: relative;
+                        cursor: pointer;
+    
+                        &:hover .overlay{
+                            display: block;
+                        }
+                    }
                 }
             }
 
@@ -176,15 +185,13 @@ main{
 
                 .img-container{
                     position: relative;
+                    cursor: pointer;
 
                     &:hover .overlay{
                         display: block;
                     }
                 }
-               
-                
             }
-         
         }
     }
 }
