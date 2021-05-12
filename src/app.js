@@ -31,7 +31,6 @@ var app = new Vue({
             },
 
             email_input:''
-
         },
 
         methods: {
