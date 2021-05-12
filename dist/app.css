@@ -357,3 +357,40 @@ main .new-products .photo-news .photo-1 .img-container:hover .overlay,
 main .new-products .photo-news .photo-2 .img-container:hover .overlay {
   display: block;
 }
+
+footer {
+  height: 1000px;
+  width: 100%;
+  padding-top: 100px;
+  background-image: url("../img/footer-background-scaled.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 30px;
+  background-position-x: 0px;
+}
+footer .container-footer {
+  width: 80%;
+  margin: auto;
+}
+footer .container-footer .container-menu-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .container-footer .container-menu-footer .menu-footer {
+  list-style-type: none;
+  color: #ffffff;
+}
+footer .container-footer .container-menu-footer .menu-footer li:first-child {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+footer .container-footer .container-menu-footer .menu-footer li:first-child:hover {
+  color: #ffffff;
+}
+footer .container-footer .container-menu-footer .menu-footer li {
+  margin-bottom: 20px;
+}
+footer .container-footer .container-menu-footer .menu-footer li:hover {
+  color: #f7f321;
+}
