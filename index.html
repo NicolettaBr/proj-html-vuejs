@@ -28,7 +28,7 @@
 
                     <!--logo-->
                     <div class="logo">
-                        <img :src="logo_nav.logo" alt="logo_nav.logo">
+                        <img :src="logo_nav.logo" :alt="logo_nav.logo">
                     </div>
                     <!--end logo-->
 
@@ -376,6 +376,7 @@
         <!--FOOTER-->
         <footer>
             <div class="container-footer">
+
                 <!--container-menu-footer-->
                 <div class="container-menu-footer">
 
@@ -406,6 +407,14 @@
                             {{menu}}
                         </li>
 
+                        <li>
+                            <img class="stores" :src="apple_store.apple" :alt="apple_store.alt">
+                        </li>
+
+                        <li>
+                            <img class="stores" :src=" play_store.play" :alt=" play_store.alt">
+                        </li>
+
                     </ul>
                     <!--end menu footer-->
 
@@ -426,10 +435,54 @@
                             {{menu}}
                         </li>
 
+                        <li>
+                            <img class="coupon" :src="img_sale.sale" :alt="img_sale.alt">
+                        </li>
+
+                        <li>
+                            <div class="code">
+                                <div>Just Use The Code</div>
+                                <div>firstorder</div>
+                                <div>At Checkout</div>
+                            </div>
+                        </li>
+
                     </ul>
                     <!--end menu footer-->
 
                 </div>
+                <!--end container-menu-footer-->
+
+                <!--input-container-->
+                <div class="input-container">
+
+                    <!--logo-->
+                    <div class="logo">
+                        <img :src="logo_nav.logo" :alt="logo_nav.alt">
+                    </div>
+                    <!--end logo-->
+
+                    <!--slogan-->
+                    <h2 class="slogan">Stay In The Loop</h2>
+                    <!--end slogan-->
+
+                    <!--form-->
+                    <div class="form-footer">
+
+                        <label class="label" for="fname" >Sign up to recive up to date news and offers directly in your inbox:</label><br>
+
+                        <input type="text" placeholder="you@email.com" v-model="email_input"> <br>
+
+                        <button class="btn">subscribe</button>
+
+                    </div>
+                    <!--end form-->
+                    
+
+
+                </div>
+
+
             </div>
 
         </footer>
