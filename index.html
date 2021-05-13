@@ -34,6 +34,7 @@
 
                     <!--menu-->
                    <ul class="menu">
+
                        <li v-for="options in menu_nav">
                            {{options}}
                            <i class="fas fa-chevron-down chevron"></i>
@@ -42,6 +43,7 @@
                        <li>
                             <i class="fas fa-shopping-cart"></i>
                        </li>
+                       
                    </ul>
                    <!--end menu-->
 
@@ -87,8 +89,10 @@
 
                 <!--info section-->
                 <div class="info">
+
                     <!--menu-info-->
                     <ul class="menu-info">
+
                         <li>
                             <i class="far fa-clock"></i>
                             <span> 24/7 delivery</span>
@@ -108,10 +112,13 @@
                             <i class="fas fa-car"></i>
                             <span>fast delivering</span>
                         </li>
+
                     </ul>
                     <!--end menu-info-->
+
                 </div>
                 <!--end info section-->
+
             </div>
             <!--end container-->
 
@@ -283,6 +290,7 @@
 
                 </div>
                 <!--end menu-categories-->
+
             </div>
             <!--end container-->
 
@@ -380,7 +388,7 @@
                 <!--container-menu-footer-->
                 <div class="container-menu-footer">
 
-                    <!--menu footer-->
+                    <!--menu footer 1-->
                     <ul class="menu-footer">
 
                         <li>
@@ -392,9 +400,9 @@
                         </li>
 
                     </ul>
-                    <!--end menu footer-->
+                    <!--end menu footer 1-->
 
-                    <!--menu footer-->
+                    <!--menu footer 2-->
                     <ul class="menu-footer">
 
                         <li>
@@ -406,9 +414,9 @@
                         </li>
 
                     </ul>
-                    <!--end menu footer-->
+                    <!--end menu footer 2-->
 
-                    <!--menu footer-->
+                    <!--menu footer 3-->
                     <ul class="menu-footer">
 
                         <li>
@@ -428,25 +436,27 @@
                         </li>
 
                     </ul>
-                    <!--end menu footer-->
+                    <!--end menu footer 3-->
 
-                    <!--menu footer-->
+                    <!--menu footer 4-->
                     <ul class="menu-footer">
 
                         <li>
                             {{menu_footer_4.title}}
                         </li>
 
-                        <li v-for="menu in menu_footer_4.menu_options" >
+                        <li v-for="menu in menu_footer_4.menu_options">
                             {{menu}}
                         </li>
 
                     </ul>
-                    <!--end menu footer-->
+                    <!--end menu footer 4-->
 
-                    <!--menu footer-->
+                    <!--menu footer 5-->
                     <ul class="menu-footer">
+
                         <div class="voucer-column">
+
                             <li>
                                 {{menu_footer_5.title}}
                             </li>
@@ -457,16 +467,18 @@
     
                             <li>
                                 <div class="code">
+
                                     <div>Just Use The Code</div>
                                     <div>firstorder</div>
                                     <div>At Checkout</div>
+
                                 </div>
                             </li>
+                            
                         </div>
                         
-
                     </ul>
-                    <!--end menu footer-->
+                    <!--end menu footer 5-->
 
                 </div>
                 <!--end container-menu-footer-->

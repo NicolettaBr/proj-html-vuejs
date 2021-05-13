@@ -1,4 +1,5 @@
 footer{
+    
     height: 1000px;
     width: 100%;
     padding-top: 100px;
@@ -11,8 +12,6 @@ footer{
     .container-footer{
         width: 80%;
         margin: auto;
-
-        
 
         .container-menu-footer{
             @include flex;
@@ -73,7 +72,6 @@ footer{
             margin-top: 50px;
             text-align: center;
             
-
             .logo{
 
                 img{
