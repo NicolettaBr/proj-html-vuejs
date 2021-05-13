@@ -1,3 +1,4 @@
+/*button style*/
 @mixin button-style {
 
     color: $nav_text_color;
@@ -19,8 +20,8 @@
     }
 }
 
+/*flex menu-info main*/
 @mixin menu-info{
-    
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -32,11 +33,13 @@
     }
 }
 
+/*flex menu most-pop-dishes main*/
 @mixin flex-photo{
     display: flex;
     justify-content: center;
 }
 
+/*flex*/
 @mixin flex{
     display: flex;
     justify-content: space-between;

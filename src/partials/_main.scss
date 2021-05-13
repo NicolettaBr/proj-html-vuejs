@@ -2,6 +2,7 @@ main{
     .container:first-child{
        height: 60px;
        
+       /*info section*/
         .info{
             background-color: $nav_text_color;
             height: 80px;
@@ -31,6 +32,7 @@ main{
     .container{
         text-align: center;
 
+        /*most popular dishes section*/
         .most-pop-dishes{
 
             h2{
@@ -73,6 +75,7 @@ main{
         }
     }
 
+    /*divider*/
     .divider{
         height: 400px;
         position: relative;
@@ -118,6 +121,8 @@ main{
         }
     }
 
+    /*menu-categories section*/
+    /*new-products section*/
     .menu-categories,
     .new-products{
         margin: 70px 0;
