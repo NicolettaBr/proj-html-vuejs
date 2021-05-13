@@ -388,9 +388,11 @@ footer .container-footer .container-menu-footer .menu-footer li:first-child {
 footer .container-footer .container-menu-footer .menu-footer li:first-child:hover {
   color: #ffffff;
 }
+footer .container-footer .container-menu-footer .menu-footer:last-child {
+  text-align: center;
+}
 footer .container-footer .container-menu-footer .menu-footer li {
   margin-bottom: 20px;
-  display: flex;
 }
 footer .container-footer .container-menu-footer .menu-footer li:hover {
   color: #f7f321;

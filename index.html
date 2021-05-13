@@ -383,7 +383,11 @@
                     <!--menu footer-->
                     <ul class="menu-footer">
 
-                        <li v-for="menu in menu_footer_1" >
+                        <li>
+                            {{menu_footer_1.title}}
+                        </li>
+
+                        <li v-for="menu in menu_footer_1.menu_options" >
                             {{menu}}
                         </li>
 
@@ -393,7 +397,11 @@
                     <!--menu footer-->
                     <ul class="menu-footer">
 
-                        <li v-for="menu in menu_footer_2" >
+                        <li>
+                            {{menu_footer_2.title}}
+                        </li>
+
+                        <li v-for="menu in menu_footer_2.menu_options" >
                             {{menu}}
                         </li>
 
@@ -403,7 +411,11 @@
                     <!--menu footer-->
                     <ul class="menu-footer">
 
-                        <li v-for="menu in menu_footer_3" >
+                        <li>
+                            {{menu_footer_3.title}}
+                        </li>
+
+                        <li v-for="menu in menu_footer_3.menu_options" >
                             {{menu}}
                         </li>
 
@@ -421,7 +433,11 @@
                     <!--menu footer-->
                     <ul class="menu-footer">
 
-                        <li v-for="menu in menu_footer_4" >
+                        <li>
+                            {{menu_footer_4.title}}
+                        </li>
+
+                        <li v-for="menu in menu_footer_4.menu_options" >
                             {{menu}}
                         </li>
 
@@ -430,22 +446,24 @@
 
                     <!--menu footer-->
                     <ul class="menu-footer">
-
-                        <li v-for="menu in menu_footer_5" >
-                            {{menu}}
-                        </li>
-
-                        <li>
-                            <img class="coupon" :src="img_sale.sale" :alt="img_sale.alt">
-                        </li>
-
-                        <li>
-                            <div class="code">
-                                <div>Just Use The Code</div>
-                                <div>firstorder</div>
-                                <div>At Checkout</div>
-                            </div>
-                        </li>
+                        <div class="voucer-column">
+                            <li>
+                                {{menu_footer_5.title}}
+                            </li>
+    
+                            <li>
+                                <img class="coupon" :src="img_sale.sale" :alt="img_sale.alt">
+                            </li>
+    
+                            <li>
+                                <div class="code">
+                                    <div>Just Use The Code</div>
+                                    <div>firstorder</div>
+                                    <div>At Checkout</div>
+                                </div>
+                            </li>
+                        </div>
+                        
 
                     </ul>
                     <!--end menu footer-->
@@ -521,7 +539,7 @@
                         <span>Theme Fusion</span>
                         <span>| All right reserved | Powered by</span>
                         <span>Word Press</span>
-                        
+
                     </div>
                     <!--end copiright section-->
 
