@@ -337,6 +337,16 @@ main .new-products .photos-menu .single-photo {
   width: 220px;
   height: 150px;
   margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+main .menu-categories .photos-menu .single-photo .overlay,
+main .new-products .photos-menu .single-photo .overlay {
+  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 150px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 main .menu-categories .photos-menu .single-photo img,
 main .new-products .photos-menu .single-photo img {

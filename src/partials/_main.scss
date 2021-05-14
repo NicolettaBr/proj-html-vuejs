@@ -148,6 +148,17 @@ main{
                 width: 220px;
                 height: 150px;
                 margin-bottom: 20px;
+                position: relative;
+                cursor: pointer;
+
+                .overlay{
+                    display: block;
+                    text-transform: uppercase;
+                    color: $nav_text_color;
+                    line-height: 150px;
+                    background-color: rgba(0,0,0,0.3);
+                    
+                }
 
                 img{
                     height: 100%;
